@@ -8,9 +8,9 @@ class Animal(object):
 ## Dog is-a Animal
 class Dog(Animal):
 
-    def __init__(self, name):
-        ## Dog has-a name
-        self.name = name
+	def __init__(self, name):
+		## Dog has-a name
+		self.name = name
 		
 	def speak(self):
 		print("Bark")
@@ -18,11 +18,11 @@ class Dog(Animal):
 ## Cat is-a Animal
 class Cat(Animal):
 
-    def __init__(self, name):
-        ## Cat has-a name
-        self.name = name
+	def __init__(self, name):
+		## Cat has-a name
+		self.name = name
 		
-	def speak(self,ceva):
+	def speak(self):
 		print("Meow")
 		
 
@@ -60,9 +60,11 @@ class Halibut(Fish):
 
 ## rover is-a Dog
 rover = Dog("Rover")
+rover.speak()
 
 ## Satan is not a cat but ok xD
 satan = Cat("Satan")
+satan.speak()
 
 ## Mary is-a person
 mary = Person("Mary")
